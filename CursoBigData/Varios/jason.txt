@@ -1,0 +1,33 @@
+1º
+loquesea[1]["Emails"][2]
+
+2º
+- loquesea["localidade 8"]["País"]
+- loquesea["localidade 9"] = {"Continente": "Africa", "País": "Guinea", "Capital": "Conakri"};
+- loquesea["localidade 4"].Poblacion = 320000
+- [
+        {
+        "Continente": "África",
+        "País": "Angola",
+        "Capital": "Luanda"
+        },
+        {
+        "Continente": "América do Norte",
+        "País": "Estados Unidos",
+        "Capital": "Washington DC"
+        }
+    ];
+
+3º
+[
+    { "Nombre": "Gofres",
+      "Precio": 5.95,
+      "Descripcion": "Mucha azúcar",
+      "Calorias": 650
+    },
+    { "Nombre": "Gofres con fresas",
+      "Precio": 7.95,
+      "Descripcion": "Mucha azúcar pero al menos algo de fruta",
+      "Calorias": 650
+    }
+]
