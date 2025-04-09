@@ -1,0 +1,274 @@
+2025.04.09 16:12:57 INFO  Started: Metals version 1.5.2 in folders 'C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala' for client Visual Studio Code 1.99.0.
+2025.04.09 16:12:59 INFO  Attempting to connect to the build server...
+2025.04.09 16:12:59 INFO  Running BSP server List(/home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/libexec/scala-cli, --cli-default-scala-version, 3.6.4, --repository, file:///home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/maven2, --prog-name, scala, --skip-cli-updates, bsp, --json-options, /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-options-v2.json, --json-launcher-options, /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-launcher-options.json, --envs-file, /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-envs.json, /home/djan/Documentos/Big Data/EjerciciosScala/Hola.scala)
+2025.04.09 16:12:59 ERROR Running process '/home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/libexec/scala-cli --cli-default-scala-version 3.6.4 --repository file:///home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/maven2 --prog-name scala --skip-cli-updates bsp --json-options /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-options-v2.json --json-launcher-options /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-launcher-options.json --envs-file /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-envs.json /home/djan/Documentos/Big Data/EjerciciosScala/Hola.scala' failed
+java.io.IOException: Cannot run program "/home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/libexec/scala-cli" (in directory "C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.bsp.BspServers.newServer(BspServers.scala:156)
+	at scala.meta.internal.bsp.BspConnector.connect$1(BspConnector.scala:173)
+	at scala.meta.internal.bsp.BspConnector.connect(BspConnector.scala:219)
+	at scala.meta.internal.metals.ConnectionProvider$Connect$.$anonfun$createSession$4(ConnectionProvider.scala:491)
+	at scala.meta.internal.metals.TimerProvider.withTimer(TimerProvider.scala:38)
+	at scala.meta.internal.metals.TimerProvider.timed(TimerProvider.scala:14)
+	at scala.meta.internal.metals.ConnectionProvider$Connect$.$anonfun$createSession$3(ConnectionProvider.scala:491)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:506)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.bsp.BspServers.newServer(BspServers.scala:156)
+	at scala.meta.internal.bsp.BspConnector.connect$1(BspConnector.scala:173)
+	at scala.meta.internal.bsp.BspConnector.connect(BspConnector.scala:219)
+	at scala.meta.internal.metals.ConnectionProvider$Connect$.$anonfun$createSession$4(ConnectionProvider.scala:491)
+	at scala.meta.internal.metals.TimerProvider.withTimer(TimerProvider.scala:38)
+	at scala.meta.internal.metals.TimerProvider.timed(TimerProvider.scala:14)
+	at scala.meta.internal.metals.ConnectionProvider$Connect$.$anonfun$createSession$3(ConnectionProvider.scala:491)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.04.09 16:13:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\.metals\bsp.trace.json or C:\Users\Imp_06 - Install\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.04.09 16:14:01 ERROR Timeout waiting for 'build/initialize' response
+2025.04.09 16:14:01 WARN  Retrying connection to the build server scala
+2025.04.09 16:14:01 INFO  Running BSP server List(/home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/libexec/scala-cli, --cli-default-scala-version, 3.6.4, --repository, file:///home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/maven2, --prog-name, scala, --skip-cli-updates, bsp, --json-options, /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-options-v2.json, --json-launcher-options, /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-launcher-options.json, --envs-file, /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-envs.json, /home/djan/Documentos/Big Data/EjerciciosScala/Hola.scala)
+2025.04.09 16:14:01 ERROR Running process '/home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/libexec/scala-cli --cli-default-scala-version 3.6.4 --repository file:///home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/maven2 --prog-name scala --skip-cli-updates bsp --json-options /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-options-v2.json --json-launcher-options /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-launcher-options.json --envs-file /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-envs.json /home/djan/Documentos/Big Data/EjerciciosScala/Hola.scala' failed
+java.io.IOException: Cannot run program "/home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/libexec/scala-cli" (in directory "C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:686)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:683)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:506)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:686)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:683)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.04.09 16:14:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\.metals\bsp.trace.json or C:\Users\Imp_06 - Install\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.04.09 16:15:01 ERROR Timeout waiting for 'build/initialize' response
+2025.04.09 16:15:01 WARN  Retrying connection to the build server scala
+2025.04.09 16:15:01 INFO  Running BSP server List(/home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/libexec/scala-cli, --cli-default-scala-version, 3.6.4, --repository, file:///home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/maven2, --prog-name, scala, --skip-cli-updates, bsp, --json-options, /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-options-v2.json, --json-launcher-options, /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-launcher-options.json, --envs-file, /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-envs.json, /home/djan/Documentos/Big Data/EjerciciosScala/Hola.scala)
+2025.04.09 16:15:01 ERROR Running process '/home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/libexec/scala-cli --cli-default-scala-version 3.6.4 --repository file:///home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/maven2 --prog-name scala --skip-cli-updates bsp --json-options /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-options-v2.json --json-launcher-options /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-launcher-options.json --envs-file /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-envs.json /home/djan/Documentos/Big Data/EjerciciosScala/Hola.scala' failed
+java.io.IOException: Cannot run program "/home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/libexec/scala-cli" (in directory "C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:686)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:683)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:506)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:686)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:683)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.04.09 16:15:02 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\.metals\bsp.trace.json or C:\Users\Imp_06 - Install\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.04.09 16:15:36 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:15:36 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:15:39 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:16:02 ERROR Timeout waiting for 'build/initialize' response
+2025.04.09 16:16:02 WARN  Retrying connection to the build server scala
+2025.04.09 16:16:02 INFO  Running BSP server List(/home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/libexec/scala-cli, --cli-default-scala-version, 3.6.4, --repository, file:///home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/maven2, --prog-name, scala, --skip-cli-updates, bsp, --json-options, /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-options-v2.json, --json-launcher-options, /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-launcher-options.json, --envs-file, /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-envs.json, /home/djan/Documentos/Big Data/EjerciciosScala/Hola.scala)
+2025.04.09 16:16:02 ERROR Running process '/home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/libexec/scala-cli --cli-default-scala-version 3.6.4 --repository file:///home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/maven2 --prog-name scala --skip-cli-updates bsp --json-options /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-options-v2.json --json-launcher-options /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-launcher-options.json --envs-file /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-envs.json /home/djan/Documentos/Big Data/EjerciciosScala/Hola.scala' failed
+java.io.IOException: Cannot run program "/home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/libexec/scala-cli" (in directory "C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:686)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:683)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:506)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:686)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:683)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.04.09 16:16:02 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\.metals\bsp.trace.json or C:\Users\Imp_06 - Install\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.04.09 16:17:02 ERROR Timeout waiting for 'build/initialize' response
+2025.04.09 16:17:02 WARN  Retrying connection to the build server scala
+2025.04.09 16:17:02 INFO  Running BSP server List(/home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/libexec/scala-cli, --cli-default-scala-version, 3.6.4, --repository, file:///home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/maven2, --prog-name, scala, --skip-cli-updates, bsp, --json-options, /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-options-v2.json, --json-launcher-options, /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-launcher-options.json, --envs-file, /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-envs.json, /home/djan/Documentos/Big Data/EjerciciosScala/Hola.scala)
+2025.04.09 16:17:02 ERROR Running process '/home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/libexec/scala-cli --cli-default-scala-version 3.6.4 --repository file:///home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/maven2 --prog-name scala --skip-cli-updates bsp --json-options /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-options-v2.json --json-launcher-options /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-launcher-options.json --envs-file /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-envs.json /home/djan/Documentos/Big Data/EjerciciosScala/Hola.scala' failed
+java.io.IOException: Cannot run program "/home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/libexec/scala-cli" (in directory "C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:686)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:683)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:506)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:686)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:683)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.04.09 16:17:03 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\.metals\bsp.trace.json or C:\Users\Imp_06 - Install\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.04.09 16:18:03 ERROR Timeout waiting for 'build/initialize' response
+2025.04.09 16:18:03 WARN  Retrying connection to the build server scala
+2025.04.09 16:18:03 INFO  Running BSP server List(/home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/libexec/scala-cli, --cli-default-scala-version, 3.6.4, --repository, file:///home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/maven2, --prog-name, scala, --skip-cli-updates, bsp, --json-options, /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-options-v2.json, --json-launcher-options, /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-launcher-options.json, --envs-file, /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-envs.json, /home/djan/Documentos/Big Data/EjerciciosScala/Hola.scala)
+2025.04.09 16:18:03 ERROR Running process '/home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/libexec/scala-cli --cli-default-scala-version 3.6.4 --repository file:///home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/maven2 --prog-name scala --skip-cli-updates bsp --json-options /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-options-v2.json --json-launcher-options /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-launcher-options.json --envs-file /home/djan/Documentos/Big Data/EjerciciosScala/.scala-build/ide-envs.json /home/djan/Documentos/Big Data/EjerciciosScala/Hola.scala' failed
+java.io.IOException: Cannot run program "/home/djan/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.6.4/scala3-3.6.4-x86_64-pc-linux.tar.gz/scala3-3.6.4-x86_64-pc-linux/libexec/scala-cli" (in directory "C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:686)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:683)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:506)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:601)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:669)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:686)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:683)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.04.09 16:18:03 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\.metals\bsp.trace.json or C:\Users\Imp_06 - Install\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.04.09 16:19:03 ERROR Timeout waiting for 'build/initialize' response
+2025.04.09 16:19:03 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:754)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:627)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.04.09 16:19:03 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:19:03 WARN  no build target for: C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala
+2025.04.09 16:19:04 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:19:04 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:29:32 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:29:32 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:29:32 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:29:33 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:29:34 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:29:34 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:29:36 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:29:37 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:29:37 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:29:38 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:29:39 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:30:57 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:40:37 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:40:37 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:40:37 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:40:38 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:40:38 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:42:30 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:42:30 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:50:03 INFO  no build target found for C:\Users\Imp_06 - Install\Documents\BD\CursoBigData\EjerciciosScala\coche.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.09 16:51:31 INFO  Shutting down server
+2025.04.09 16:51:31 INFO  shutting down Metals
+2025.04.09 16:51:31 INFO  Exiting server

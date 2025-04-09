@@ -63,6 +63,7 @@ object MongoExample {
       .append("creationDate", bichejo.creationDate)
       .append("lastUpdated",bichejo.lastUpdated)
     collection.insertOne(bichodoc)
+
  
     // Cerrar cliente
     mongoClient.close()
