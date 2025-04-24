@@ -12,8 +12,8 @@ object EjerciciosListas:
             println("2. Encuentra el segundo mayor")
             println("3. Filtra y transforma")
             println("4. Invertir un Mapa")
-            println("5. Insertar libro por fichero")
-            println("6. Insertar lista de libros")
+            println("5. Intersección de claves y suma de valores")
+            println("6. Palabras únicas en dos textos")
             println("7. Mostrar lista de autores")
             println("8. Mostrar lista de libros")
             println("0. Salir")
@@ -24,10 +24,10 @@ object EjerciciosListas:
                 case "2" => segundoMayor()
                 case "3" => filtraTransforma()
                 case "4" => invierteMapa()
-                /*case "5" => insertaLibroFichero()
-                case "6" => insertaListaLibros()
-                case "7" => muestraAutores()
-                case "8" => muestraLibros()*/
+                case "5" => clavesValores()
+                case "6" => palabrasUnicas()
+                //case "7" => muestraAutores()
+                //case "8" => muestraLibros()
                 case "0" => sw = false
                 case _ => println("Opción inválida")
 
@@ -90,9 +90,9 @@ object EjerciciosListas:
 
 
             def invierteMapa(): Unit =
-                var mapaGente = Map[String, Int]()
-                var mapaInvertido = Map[Int,Set[String]]()
-                var sw = true
+                val mapaGente = Map("Ana" -> 30, "Luis" -> 25, "Eva" -> 30, "Juan" -> 25)//var mapaGente = Map[String, Int]()
+                var mapaInvertido = Map[Int, Map[String, Int]]()
+               /* var sw = true
                 while sw do
                     println("Introduce el nombre (0 para acabar) ")
                     var nombre = StdIn.readLine()
@@ -101,15 +101,34 @@ object EjerciciosListas:
                     else
                         println("Introduce su edad: ")
                         var edad = StdIn.readInt()
-                        mapaGente += (nombre -> edad)
+                        mapaGente += (nombre -> edad)*/
                 //for (i, j) <- mapaGente do
-                //    mapaInvertido += (j -> i)
-                println(mapaGente)
-                mapaInvertido = mapaGente.groupBy((k,v) => v)
+                  //  mapaInvertido += (j -> i)
 
+                mapaInvertido = mapaGente.groupBy((k,v) => v)
+                //var setNombres = mapaInvertido.toSet
                 println(mapaInvertido)
 
 
+
+            def clavesValores(): Unit =
+                val m1 = Map("a" -> 1, "b" -> 2, "d" -> 3)
+                val m2 = Map("b" -> 5, "c" -> 7, "d" -> 10)
+                val m3 = MapMut[String, Int]()
+                for (k,v) <- m1 do
+                    if m2.contains(k) then
+                        m3 += (k -> (v + m2(k)))
+                println(m3)
+
+
+            def palabrasUnicas(): Unit =
+                val texto1 = List("sol", "luna", "estrella", "sol", "mar")
+                val texto2 = List("mar", "sol", "luna", "luna", "cielo")
+                val aux1 = texto1.groupBy((k) => k).filter((i, j) => j.length == 1 )
+                val aux2 = texto2.groupBy((k) => k).filter((i, j) => j.length == 1 )
+                val combi = (aux1.toSet & aux2.toSet)
+                for l <- combi do
+                    println(l.key)
 
 
 
