@@ -14,8 +14,7 @@ object EjerciciosListas:
             println("4. Invertir un Mapa")
             println("5. Intersección de claves y suma de valores")
             println("6. Palabras únicas en dos textos")
-            println("7. Mostrar lista de autores")
-            println("8. Mostrar lista de libros")
+            println("7. Map de frecuencias y filtrado")
             println("0. Salir")
             println("*********************************************************************")
             var opcion = StdIn.readLine()
@@ -26,8 +25,7 @@ object EjerciciosListas:
                 case "4" => invierteMapa()
                 case "5" => clavesValores()
                 case "6" => palabrasUnicas()
-                //case "7" => muestraAutores()
-                //case "8" => muestraLibros()
+                case "7" => freqListado()
                 case "0" => sw = false
                 case _ => println("Opción inválida")
 
@@ -49,6 +47,7 @@ object EjerciciosListas:
                     val listaGrupada = palabras.groupBy(_ == palabra)
                     println(s"${palabra.capitalize} ${listaGrupada(true).length} ")
                 )
+
 
             def segundoMayor(): Unit =
                 var arrayNumeros = ArrayBuffer[Int]()
@@ -74,6 +73,7 @@ object EjerciciosListas:
                     resultado = "No hay un 2º número mayor"
                 resultado
 
+                
             def filtraTransforma(): Unit =
                 var arrayNumeros = ArrayBuffer[Int]()
                 var sw = true
@@ -90,25 +90,12 @@ object EjerciciosListas:
 
 
             def invierteMapa(): Unit =
-                val mapaGente = Map("Ana" -> 30, "Luis" -> 25, "Eva" -> 30, "Juan" -> 25)//var mapaGente = Map[String, Int]()
+                val mapaGente = Map("Ana" -> 30, "Luis" -> 25, "Eva" -> 30, "Juan" -> 25)
                 var mapaInvertido = Map[Int, Map[String, Int]]()
-               /* var sw = true
-                while sw do
-                    println("Introduce el nombre (0 para acabar) ")
-                    var nombre = StdIn.readLine()
-                    if nombre == "0" then
-                        sw = false
-                    else
-                        println("Introduce su edad: ")
-                        var edad = StdIn.readInt()
-                        mapaGente += (nombre -> edad)*/
-                //for (i, j) <- mapaGente do
-                  //  mapaInvertido += (j -> i)
-
+                var mapaFinal = MapMut[Int, Set[String]]()
                 mapaInvertido = mapaGente.groupBy((k,v) => v)
-                //var setNombres = mapaInvertido.toSet
-                println(mapaInvertido)
-
+                mapaInvertido.foreach((k,v) => (mapaFinal(k) = v.keys.toSet))
+                println(mapaFinal)
 
 
             def clavesValores(): Unit =
@@ -122,14 +109,21 @@ object EjerciciosListas:
 
 
             def palabrasUnicas(): Unit =
-                val texto1 = List("sol", "luna", "estrella", "sol", "mar")
-                val texto2 = List("mar", "sol", "luna", "luna", "cielo")
-                val aux1 = texto1.groupBy((k) => k).filter((i, j) => j.length == 1 )
-                val aux2 = texto2.groupBy((k) => k).filter((i, j) => j.length == 1 )
-                val combi = (aux1.toSet & aux2.toSet)
-                for l <- combi do
-                    println(l.key)
+                val texto1 = List("sol", "luna", "estrella", "sol", "mar","patata")
+                val texto2 = List("mar", "sol", "luna", "luna", "cielo","patata")
+                val aux1 = texto1.groupBy((k) => k).filter((i, j) => j.length == 1)
+                val aux2 = texto2.groupBy((k) => k).filter((i, j) => j.length == 1)
+                val combi = (aux1.keys.toSet & aux2.keys.toSet)
+                println(combi)
 
+
+            def freqListado():Unit = 
+                val palabras = List("a", "b", "a", "c", "b", "a", "d")
+                val mapaPalabras = palabras.groupBy((k) => k).filter((i, j) => j.length > 1)
+                val longPalabras = MapMut[String, Int]()
+                mapaPalabras.foreach((k,v) => (longPalabras(k) = v.length))
+                println(longPalabras)    
+        
 
 
 
